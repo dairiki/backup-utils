@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+#
+# Copyright (c) 2014 Geoffrey T. Dairiki <dairiki@dairiki.org>
+# All rights reserved.
+#
 """ Rules for determining which backups to keep
 """
 from __future__ import absolute_import

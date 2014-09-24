@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+#
+# Copyright (c) 2014 Geoffrey T. Dairiki <dairiki@dairiki.org>
+# All rights reserved.
+#
 """
 """
 from __future__ import absolute_import

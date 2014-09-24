@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
 
+import os
 import sys
 from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
+
+here = os.path.abspath(os.path.dirname(__file__))
+README = open(os.path.join(here, 'README.rst')).read()
+CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 
 class PyTest(TestCommand):
     def finalize_options(self):
@@ -20,12 +25,13 @@ install_requires = []
 
 setup(
     name="backup-utils",
-    version='0.1',
+    version='0.1rc1',
     description='Jeff’s backup helpers',
-    #long_description=,
+    long_description=README + '\n\n' + CHANGES,
     author='Jeff Dairiki',
     author_email='dairiki@dairiki.org',
-    #url=
+    url='git@github.com:dairiki/backup-utils.git',
+    license='BSD',
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: System Administrators",
