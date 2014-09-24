@@ -1,0 +1,8 @@
+*~
+*.pyc
+/backup_utils.egg-info/
+
+/.coverage
+/htmlcov/
+/.tox/
+
